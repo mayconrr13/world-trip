@@ -6,6 +6,7 @@ export default function Index() {
   return (
     <Box overflowX="hidden">
       <Flex 
+        as="header"
         h={[50, 50, 75, 100]} 
         align="center" 
         justify="center"
