@@ -1,5 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 
+// import '../components/Swiper/styles.css'
+
 import theme from '../theme'
 import { AppProps } from 'next/app'
 

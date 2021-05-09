@@ -25,6 +25,9 @@ const theme = extendTheme({
         padding: 0,
         boxSizing: "border-box"
       },
+      ":root": {
+        "--swiper-theme-color": "#FFBA08"
+      },
       "body": {
         backgroundColor: "gray.50",
         color: "gray.800"
@@ -35,6 +38,14 @@ const theme = extendTheme({
       },
       "button": {
         cursor: "pointer"
+      },
+      ".swiper-pagination-bullet": {
+        backgroundColor: "gray.500",
+        width: "12px",
+        height: "12px"
+      },
+      ".swiper-pagination-bullet-active": {
+        backgroundColor: "var(--swiper-theme-color)"
       }
     }
   }

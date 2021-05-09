@@ -1,7 +1,9 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { ChevronLeftIcon, InfoOutlineIcon } from '@chakra-ui/icons'
+import { useRouter } from "next/dist/client/router";
 
 export default function Continent() {
+  const router = useRouter()
   return (
     <Box>
       <Flex 
@@ -16,7 +18,7 @@ export default function Continent() {
           position="relative"
           mx="auto"
         >
-          <Box position="absolute" left="0" ml="4">
+          <Box as="button" position="absolute" left="0" ml="4" onClick={() => router.back()}>
             <ChevronLeftIcon width={["16px" , "24px", "24px", "32px"]} h="auto"/>
           </Box>
           <Image 
@@ -28,7 +30,8 @@ export default function Continent() {
       </Flex>
 
       <Box 
-        backgroundImage="url('/images/europe.png')"   
+        backgroundImage="url('/images/europe.jpg')" 
+        backgroundPosition="center"  
         w="100vw" h={[150, 150, 300, 500]} 
         mb="6"
       >
@@ -88,39 +91,39 @@ export default function Continent() {
         </Heading>
         <Flex>
           <Flex align="center" direction="column" bg="white" mt="5">
-            <Image src="/images/europe.png" alt="country" w="64" h="44" objectFit="cover" borderTopRadius="md" />
+            <Image src="/images/europe.jpg" alt="country" w="64" h="44" objectFit="cover" borderTopRadius="md" />
             <Flex align="center" justify="space-between" direction="row" p="5" w="100%" borderBottomRadius="md" border="solid" borderColor="yellow.500" borderTopColor="transparent" borderWidth="1px" >
               <Flex align="flex-start"  direction="column">
                 <Text mb="3" fontWeight="semibold" color="gray.800">Londres</Text>
                 <Text fontWeight="medium" color="gray.500">Reino Unido</Text>
               </Flex>
-              <Image src="/images/europe.png" alt="flag" w="30px" h="30px" objectFit="cover" borderRadius="full" />
+              <Image src="/images/europe.jpg" alt="flag" w="30px" h="30px" objectFit="cover" borderRadius="full" />
             </Flex>
           </Flex>
         </Flex>
         
         <Flex>
           <Flex align="center" direction="column" bg="white" mt="5">
-            <Image src="/images/europe.png" alt="country" w="64" h="44" objectFit="cover" borderTopRadius="md" />
+            <Image src="/images/europe.jpg" alt="country" w="64" h="44" objectFit="cover" borderTopRadius="md" />
             <Flex align="center" justify="space-between" direction="row" p="5" w="100%" borderBottomRadius="md" border="solid" borderColor="yellow.500" borderTopColor="transparent" borderWidth="1px" >
               <Flex align="flex-start"  direction="column">
                 <Text mb="3" fontWeight="semibold" color="gray.800">Londres</Text>
                 <Text fontWeight="medium" color="gray.500">Reino Unido</Text>
               </Flex>
-              <Image src="/images/europe.png" alt="flag" w="30px" h="30px" objectFit="cover" borderRadius="full" />
+              <Image src="/images/europe.jpg" alt="flag" w="30px" h="30px" objectFit="cover" borderRadius="full" />
             </Flex>
           </Flex>
         </Flex>
 
         <Flex>
           <Flex align="center" direction="column" bg="white" mt="5">
-            <Image src="/images/europe.png" alt="country" w="64" h="44" objectFit="cover" borderTopRadius="md" />
+            <Image src="/images/europe.jpg" alt="country" w="64" h="44" objectFit="cover" borderTopRadius="md" />
             <Flex align="center" justify="space-between" direction="row" p="5" w="100%" borderBottomRadius="md" border="solid" borderColor="yellow.500" borderTopColor="transparent" borderWidth="1px" >
               <Flex align="flex-start"  direction="column">
                 <Text mb="3" fontWeight="semibold" color="gray.800">Londres</Text>
                 <Text fontWeight="medium" color="gray.500">Reino Unido</Text>
               </Flex>
-              <Image src="/images/europe.png" alt="flag" w="30px" h="30px" objectFit="cover" borderRadius="full" />
+              <Image src="/images/europe.jpg" alt="flag" w="30px" h="30px" objectFit="cover" borderRadius="full" />
             </Flex>
           </Flex>
         </Flex>

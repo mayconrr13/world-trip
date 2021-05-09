@@ -1,4 +1,5 @@
 import { Box, Image, UnorderedList, ListItem, Divider, Heading, Text, Flex } from "@chakra-ui/react";
+import { Slider } from "../components/Slider";
 
 import { homeTopics } from '../data/homeTopics'
 
@@ -87,6 +88,7 @@ export default function Index() {
               alignItems="center"
               justifyContent="center"
               mb="7"
+              key={item.text}
             >
               <Box
                 w="2"
@@ -136,44 +138,7 @@ export default function Index() {
         Vamos nessa?<br/> Então escolha seu continente
       </Text>
 
-      <Flex
-        align="center"
-        justify="center"
-        w="100vw"
-        maxW="calc(1160px - 2rem)"
-        mx="auto"
-        mb="8"
-        px="4"
-        h={["250px",
-        "250px",
-        "350px",
-        "450px"]}
-        backgroundImage="url('/images/europe.png')"
-        backgroundRepeat="no-repeat"
-        backgroundPosition="center"
-        objectFit="contain"
-      >
-        <Box>
-          <Text
-            textAlign="center"
-            fontWeight="bold"
-            color="gray.50"
-            fontSize={["24", "24", "28"]}
-            mb="3"
-          >
-            Europa
-          </Text>
-          <Text
-            textAlign="center"
-            fontWeight="bold"
-            color="gray.300"
-            fontSize={["14", "14", "16"]}
-          >
-            o continente mais antigo
-          </Text>
-        </Box>
-      </Flex>
+      <Slider />
     </Box>
-
   )
 }
