@@ -46,10 +46,10 @@ export const Slider = () => {
           return (
             <SwiperSlide 
               tag="li" 
-              style={{width: "100%", height: "100%", position: "relative"}} 
+              style={{width: "100%", height: "100%", position: "relative", listStyleType: 'none'}} 
               key={continent.id}
             >
-              <Link href={`/continent`} >
+              <Link href={`/continent/${continent.id}`} >
                 <a>
                   <Flex 
                     position="absolute" 
